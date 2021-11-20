@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity4">
+    <TextView
+            android:text="Choose Parkng area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/ChooseParkingArea"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.512"/>
+    <TextView
+            android:text="Time"
+            android:layout_width="73dp"
+            android:layout_height="26dp" android:id="@+id/Time"
+            android:textAllCaps="true" android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/UJParkingkot"
+            app:layout_constraintStart_toStartOf="@+id/UJParkingkot"
+            app:layout_constraintTop_toBottomOf="@+id/UJParkingkot" android:layout_marginTop="48dp"/>
+    <Button
+            android:text="@android:string/search_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/SearchButton"
+            app:layout_constraintEnd_toEndOf="@+id/TimeGroup"
+            app:layout_constraintStart_toStartOf="@+id/TimeGroup" app:layout_constraintTop_toBottomOf="@+id/TimeGroup"
+            android:layout_marginTop="144dp"/>
+    <CheckBox
+            android:text="UJ Parking lot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/UJParkingkot"
+            app:layout_constraintEnd_toEndOf="@+id/ChooseParkingArea"
+            app:layout_constraintStart_toStartOf="@+id/ChooseParkingArea"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseParkingArea" android:layout_marginTop="24dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <RadioGroup
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:id="@+id/TimeGroup"
+            app:layout_constraintEnd_toEndOf="@+id/Time"
+            app:layout_constraintStart_toStartOf="@+id/Time" app:layout_constraintTop_toBottomOf="@+id/Time"
+            android:layout_marginTop="16dp">
+        <RadioButton
+                android:text="8:00-9:00 am"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/parkingTime1"/>
+        <RadioButton
+                android:text="9:00-10:00 am"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/parkingTime2"/>
+        <RadioButton
+                android:text="10:00-11:00 am"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/parkingTime3"/>
+        <RadioButton
+                android:text="11:00 am-12:00 pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/parkingTime4"/>
+        <RadioButton
+                android:text="12:00-1:00 pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/parkingTime5"/>
+        <RadioButton
+                android:text="1:00-2:00 pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/parkingTime6"/>
+        <RadioButton
+                android:text="2:00-3:00 pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/parkingTime7"/>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

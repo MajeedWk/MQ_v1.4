@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity3">
+
+    <Button
+            android:text="New Booking"
+            android:layout_width="244dp"
+            android:layout_height="82dp" android:id="@+id/NewBookingButton"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="68dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+    <Button
+            android:text="Cancel Booking"
+            android:layout_width="244dp"
+            android:layout_height="82dp" android:id="@+id/CancelBookingButton"
+            app:layout_constraintEnd_toEndOf="@+id/NewBookingButton"
+            app:layout_constraintStart_toStartOf="@+id/NewBookingButton"
+            app:layout_constraintTop_toBottomOf="@+id/NewBookingButton" android:layout_marginTop="44dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="View Booking"
+            android:layout_width="244dp"
+            android:layout_height="82dp" android:id="@+id/ViewBookingButton"
+            app:layout_constraintEnd_toEndOf="@+id/CancelBookingButton"
+            app:layout_constraintStart_toStartOf="@+id/CancelBookingButton"
+            app:layout_constraintTop_toBottomOf="@+id/CancelBookingButton" android:layout_marginTop="44dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="Report"
+            android:layout_width="244dp"
+            android:layout_height="82dp" android:id="@+id/ReportButton1"
+            app:layout_constraintStart_toStartOf="@+id/ViewBookingButton"
+            app:layout_constraintEnd_toEndOf="@+id/ViewBookingButton"
+            app:layout_constraintTop_toBottomOf="@+id/ViewBookingButton" android:layout_marginTop="44dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="LogOut"
+            android:layout_width="244dp"
+            android:layout_height="82dp" android:id="@+id/LogoutButton"
+            app:layout_constraintEnd_toEndOf="@+id/ReportButton1"
+            app:layout_constraintStart_toStartOf="@+id/ReportButton1"
+            app:layout_constraintTop_toBottomOf="@+id/ReportButton1" android:layout_marginTop="44dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
